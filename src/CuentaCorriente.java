@@ -44,6 +44,7 @@ public class CuentaCorriente extends Cuenta {
         }
     }
 
+    //funciona pero se deberia mejorar =)
     public void retirarDisponible(BigDecimal valor) {
         BigDecimal montoUtilizadoDeDescubierto = BigDecimal.ZERO;
         if (primeroMenorAlSegundo(valor, super.saldo)) {

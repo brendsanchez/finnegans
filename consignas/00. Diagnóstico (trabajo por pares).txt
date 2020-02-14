@@ -1,0 +1,8 @@
+Emilia tiene su biblioteca de canciones en formato mp3, y por cada canción posee su título, autor, duración (en segundos) y el género musical al que pertenece.
+Emilia tiene curiosidad por saber los siguientes datos de su colección:
+
+¿Cuál es la canción más larga?
+¿Cuántas horas de música tiene por género? ¿Y por autor?
+¿De qué autor tiene más canciones?
+¿Cuántas horas de música tiene en total?
+Para ello nos pidió ayuda, ya que sabe que nos damos maña con la programación. ¿Podrían sugerir una forma de responder cada una de estas preguntas? Pueden hacerlo coloquialmente, como pseudocódigo, o también proporcionando un programa en el lenguaje de su preferencia.

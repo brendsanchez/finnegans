@@ -1,0 +1,11 @@
+Capítulo IV: Se agranda la familia
+
+Esta vez necesitamos modelar dos nuevos tipos de cuenta:
+
+CuentaDeAhorros, que permite reservar parte del saldo para que no esté disponible, en una especie de saldo secundario. Se puede disponer de ese saldo normalmente una vez que se reintegre (a pedido del cliente) al saldo total de la cuenta.
+CuentaCorriente, que permite retirar todo lo disponible, y un descubierto de hasta cierta cantidad de dinero extra. El monto “en descubierto” se establece al momento de la apertura de la cuenta.
+
+Preguntas para profundizar
+¿Hubo alguna funcionalidad que pudiera reutilizarse?
+¿Qué método tuvo que rehacerse?
+¿Cómo se manejan transferencias entre tipos de cuenta diferentes?

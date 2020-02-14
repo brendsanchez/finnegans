@@ -1,0 +1,27 @@
+La siguiente práctica tiene como objetivo visitar y profundizar en los conceptos de Programación Orientada a Objetos. Se anima a los estudiantes a explorar el ejemplo, agregando conceptos propios así como también sugiriendo mejoras o alternativas. Mediante la exploración es que se lograrán los aprendizajes más profundos, se debe tomar esta guía como un mapa: marca el camino, pero si nos desviamos para descubrir nuevas áreas, siempre podemos retomar sendero gracias a él.
+
+Capítulo I: Estructuras de Datos
+
+Una Cuenta posee un saldo. Se puede agregar dinero a la Cuenta, incrementando el saldo. También se puede retirar dinero de la Cuenta, decrementando dicho saldo.
+Debe poderse resolver la siguiente secuencia de acciones:
+
+Creación de una Cuenta nueva, saldo == 0.
+Acreditación de $ 1000, saldo == 1000.
+Retiro de $ 550, saldo == 450.
+
+    // main
+    Cuenta miCuenta = new Cuenta();
+    System.out.println(miCuenta.saldo); // 0
+
+    miCuenta.saldo += 1000;
+    System.out.println(miCuenta.saldo); // 1000
+
+    miCuenta.saldo -= 550;
+    System.out.println(miCuenta.saldo); // 450
+
+Preguntas para profundizar
+
+¿Qué tipo de dato se utilizó para el saldo? ¿Es el más apropiado?
+¿Qué visibilidad tiene el atributo saldo de la Cuenta? ¿Es correcto?
+Si extraigo más dinero del disponible en saldo, seguramente pueda hacerlo. ¿Está bien que así sea?
+
