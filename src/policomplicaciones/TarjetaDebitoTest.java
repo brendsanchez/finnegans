@@ -30,6 +30,8 @@ public class TarjetaDebitoTest extends cuenta.Cuenta {
         plazoFijo.realizarPlazoFijo(1000.0,12);
 
         assertEquals(plazoFijo.getMontoTotal(), 1412);
+        plazoFijo.cobrarPlazoFijo();
+        assertEquals(cuenta.consultarSaldo(), new BigDecimal(1412));
     }
 
     @Test
