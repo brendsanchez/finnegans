@@ -1,4 +1,4 @@
-package tests;
+package cuenta;
 
 import org.junit.Assert;
 import org.junit.Before;

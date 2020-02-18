@@ -1,4 +1,4 @@
-package tests;
+package cuenta;
 
 import exception.MyRuntime;
 import policomplicaciones.Transaccion;
@@ -13,6 +13,7 @@ public class Cuenta {
 
     public void depositar(BigDecimal valor) {
         if (this.valorEsPositivo(valor)) {
+            transaccions.add(new Transaccion("depositar", valor));
             this.saldo = this.saldo.add(valor);
         } else {
             throw new MyRuntime("error depositar " + valor + " es negativo");
@@ -23,6 +24,7 @@ public class Cuenta {
         if (this.valorEsPositivo(valor)) {
             if (primeroMenorAlSegundo(valor, saldo)) {
                 this.saldo = this.saldo.subtract(valor);
+                transaccions.add(new Transaccion("extraccion", valor));
             } else {
                 throw new MyRuntime("no tienes suficiente fondos para extraer " + valor + ", en la cuenta tienes: " + this.consultarSaldo());
             }
@@ -66,5 +68,10 @@ public class Cuenta {
     @Override
     public int hashCode() {
         return Objects.hash(saldo, transaccions);
+    }
+
+    public void movimiento(String motivo, int monto){
+        this.extraccion(new BigDecimal(monto));
+        transaccions.add(new Transaccion(motivo, new BigDecimal(monto)));
     }
 }

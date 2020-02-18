@@ -1,6 +1,4 @@
-package tests;
-
-import tests.Cuenta;
+package cuenta;
 
 import java.math.BigDecimal;
 

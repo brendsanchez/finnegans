@@ -1,4 +1,4 @@
-package tests;
+package cuenta;
 
 import exception.MyRuntime;
 import org.junit.Before;
@@ -6,8 +6,6 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import java.math.BigDecimal;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class MainTest {
     Cuenta miCuenta;

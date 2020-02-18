@@ -1,12 +1,10 @@
 import org.junit.Before;
 import org.junit.Test;
 import policomplicaciones.Banco;
-import tests.Cuenta;
+import cuenta.Cuenta;
 
 import java.math.BigDecimal;
 import java.util.*;
-
-import static org.junit.Assert.*;
 
 public class BancoTest extends Cuenta {
     Cuenta cuentaOrigen;

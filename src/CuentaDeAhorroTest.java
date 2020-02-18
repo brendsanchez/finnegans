@@ -1,7 +1,7 @@
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import tests.Cuenta;
+import cuenta.Cuenta;
 
 import java.math.BigDecimal;
 

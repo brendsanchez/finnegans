@@ -1,5 +1,5 @@
 import exception.MyRuntime;
-import tests.Cuenta;
+import cuenta.Cuenta;
 
 import java.math.BigDecimal;
 
